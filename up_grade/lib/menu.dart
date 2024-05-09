@@ -1,50 +1,68 @@
-
 import 'package:flutter/material.dart';
-//import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-  final String title;
+import 'perfilJugador.dart';
 
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
+class Menu extends StatelessWidget {
+  const Menu({super.key});
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
+        backgroundColor: Color.fromARGB(255, 71, 66, 221),
+        title: Text("Nombre de usuario"),
       ),
+
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
+        child: Card(
+          color: Color.fromARGB(255, 242, 240, 215),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+
             const Text(
-              'Bienvenido',
+              'Perfil de usuario: ',
+              style: TextStyle(fontFamily: 'Mario', fontSize: 25)
             ),
             Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
+              'Lista de Juegos: ',
+              style: TextStyle(fontFamily: 'Mario', fontSize: 25)
             ),
+            Text(
+              'detalles de rutina: ',
+              style: TextStyle(fontFamily: 'Mario', fontSize: 25)
+            ),
+            ]
+          )
+          
+        // Detalles de la aplicación
+        /*child:  Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Text("Menu: ", style: TextStyle(fontFamily: "Mario", fontSize: 20)),
           ],
-        ),
+        )*/
+      )
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ),
+
+      persistentFooterAlignment: AlignmentDirectional.bottomCenter,
+      persistentFooterButtons: <Widget>[
+      ElevatedButton(
+          onPressed: () {
+            Navigator.push(
+                context,
+               MaterialPageRoute(                 
+                builder: (context) => const perfilJugador())); //ir a perfil Jugador
+            },
+            child: const Text("Perfil de jugador")),
+
+      ElevatedButton(onPressed: () {
+            Navigator.pop(context);
+      },
+            child: const Text("Regresar")),
+      ]
     );
   }
 }
