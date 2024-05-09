@@ -7,19 +7,27 @@ class perfilJugador extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
+    String iconUser = "assets/user.svg";
+
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 71, 66, 221),
-        title: Text("Nombre de usuario"),
+        backgroundColor: Color.fromARGB(255, 134, 130, 255),
+        title: Text("Perfil"),
       ),
 
       body: Center(
         // Detalles de la aplicación
-      child:  Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Text("perfil de jugador", style: TextStyle(fontFamily: "Mario", fontSize: 20)),
-          ],
+        child:  Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: <Widget>[
+            Row(
+              children: [
+              SvgPicture.asset(iconUser, height: 75, width: 75,),
+              Text("  Nombre de usuario", style: TextStyle(fontFamily: "Mario", fontSize: 20)),
+              ],
+            ),
+            Text(' Descripción del usuario ',  style: TextStyle(fontFamily: 'Mario', fontSize: 20)),
+          ]
         )
       ),
       persistentFooterAlignment: AlignmentDirectional.bottomCenter,
