@@ -9,6 +9,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+  
 
   // This widget is the root of your application.
   @override
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       title: 'UpGrade',
       theme: ThemeData(
         fontFamily: 'Mario',
-        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 60, 54, 209)),
+        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 78, 73, 226)),
         useMaterial3: true,
       ),
       home: const 
