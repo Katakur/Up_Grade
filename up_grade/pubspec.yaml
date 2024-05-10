@@ -63,6 +63,8 @@ flutter:
   assets:
     - assets/user.svg
     - assets/controller.svg
+    - assets/details.svg
+    - assets/favorite.svg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

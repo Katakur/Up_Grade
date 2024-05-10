@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import 'detallesRutina.dart';
+
 class listaJuegos extends StatelessWidget {
   const listaJuegos({super.key});
 
@@ -10,7 +12,7 @@ class listaJuegos extends StatelessWidget {
       appBar: AppBar(
 
         backgroundColor: Color.fromARGB(255, 134, 130, 255),
-        title: Text("Detalles de la app"),
+        title: Text("Juegos"),
       ),
 
        body: Center(
@@ -25,7 +27,6 @@ class listaJuegos extends StatelessWidget {
                 color: Color.fromARGB(255, 255, 228, 130),
                 child: const Center(
                   child: Text("Nombre de Juego 1", style: TextStyle(fontFamily: "Mario", fontSize: 20)),
-                  
                   //ElevatedButton(onPressed: () {Navigator.pop(context);},),
               )),
               Container(
@@ -61,7 +62,17 @@ class listaJuegos extends StatelessWidget {
             Navigator.pop(context);
       },
             child: const Text("Regresar")),
+            ElevatedButton(onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(                 
+                builder: (context) => const DetallesRutina())); //ir a lista de juegos
+            },
+            child: const Text("Juego 1")),
       ]
+
+      
+      
     );
   }
 }
