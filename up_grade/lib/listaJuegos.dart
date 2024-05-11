@@ -8,6 +8,9 @@ class listaJuegos extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //String iconUser = "assets/user.svg";
+    int iD_Juego = 1; // ID del juego seleccionado
+    
      return Scaffold(
       appBar: AppBar(
 

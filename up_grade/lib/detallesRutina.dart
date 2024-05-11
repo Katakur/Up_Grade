@@ -8,6 +8,8 @@ class DetallesRutina extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    int iD_Juego_Seleccionado = 1;
+    String iconFavorite = "assets/favorite.svg";
 
     return Scaffold(
       appBar: AppBar(
@@ -22,7 +24,15 @@ class DetallesRutina extends StatelessWidget {
       child:  Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Text("Detalles del juego", style: TextStyle(fontFamily: "Mario", fontSize: 20)),
+            Row(
+            children:[ Text("   Detalles del juego   ", style: TextStyle(fontFamily: "Mario", fontSize: 20)),
+            ElevatedButton(
+            onPressed: () {
+              iD_Juego_Seleccionado = 0; //ir a lista de juegos
+              Color.fromARGB(1, 1, 1, 1);
+            },
+            child: SvgPicture.asset(iconFavorite, height: 25, width: 25,)),
+            ]),
             Text("Recomendaciones", style: TextStyle(fontFamily: "Mario", fontSize: 15)),
             Text("Cantidad de combos", style: TextStyle(fontFamily: "Mario", fontSize: 15)),
             Text("Vida total finalizada", style: TextStyle(fontFamily: "Mario", fontSize: 15)),
