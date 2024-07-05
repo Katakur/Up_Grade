@@ -26,10 +26,10 @@ class perfilJugador extends StatelessWidget {
             Row(
               children: [
               SvgPicture.asset(iconUser, height: 75, width: 75,),
-              Text("  Nombre de usuario", style: TextStyle(fontFamily: "Mario", fontSize: 20)),
+              Text("  Nacho", style: TextStyle(fontFamily: "Mario", fontSize: 20)),
               ],
             ),
-            Text(' Descripción del usuario ',  style: TextStyle(fontFamily: 'Mario', fontSize: 20)),
+            Text(' Soy jugador nuevo y busco mejorar en juegos de pelea tipo smash para salirme de la U ',  style: TextStyle(fontFamily: 'Mario', fontSize: 20)),
 
             Text(' \n \n \n \n'),// Salto de espacio
 

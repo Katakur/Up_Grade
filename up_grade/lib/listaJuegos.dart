@@ -25,31 +25,76 @@ class listaJuegos extends StatelessWidget {
           child: ListView(
             children: <Widget>[
             //Los elementos de la lista se guardan en conteiner
+             InkWell(
+                onTap: () {
+                  // Acción al tocar "Nombre de Juego 1"
+                  iD_Juego = 1;
+                  Navigator.push(
+                context,
+                MaterialPageRoute(                 
+                builder: (context) => const DetallesRutina()));
+                  // Navegar a otra pantalla o mostrar un diálogo
+                },
+                child: Container(
+                  height: 55,
+                  color: Color.fromARGB(255, 255, 228, 130),
+                  child: Center(
+                    child: Text(
+                      "super Smash Bros Melee",
+                      style: TextStyle(fontFamily: "Mario", fontSize: 20),
+                    ),
+                  ),
+                ),
+              ),
               Container(
-                height: 55,
-                color: Color.fromARGB(255, 255, 228, 130),
-                child: const Center(
-                  child: Text("Nombre de Juego 1", style: TextStyle(fontFamily: "Mario", fontSize: 20)),
-                  //ElevatedButton(onPressed: () {Navigator.pop(context);},),
-              )),
+                height: 5,
+                                  
+              ),
+             InkWell(
+                onTap: () {
+                  // Acción al tocar "Nombre de Juego 2"
+                  iD_Juego = 2;
+                  Navigator.push(
+                context,
+                MaterialPageRoute(                 
+                builder: (context) => const DetallesRutina()));
+                  // Navegar a otra pantalla o mostrar un diálogo
+                },
+                child: Container(
+                  height: 55,
+                  color: Color.fromARGB(255, 255, 228, 130),
+                  child: Center(
+                    child: Text(
+                      "Multiversus",
+                      style: TextStyle(fontFamily: "Mario", fontSize: 20),
+                    ),
+                  ),
+                ),
+              ),
               Container(
                 height: 5,
               ),
-              Container(
-                height: 55,
-                color: Color.fromARGB(255, 255, 228, 130),
-                child: const Center(
-                  child: Text("Nombre de Juego 2",  style: TextStyle(fontFamily: "Mario", fontSize: 20)),
-              )),
-              Container(
-                height: 5,
+             InkWell(
+                onTap: () {
+                  // Acción al tocar "Nombre de Juego 3"
+                  iD_Juego = 3;
+                  Navigator.push(
+                context,
+                MaterialPageRoute(                 
+                builder: (context) => const DetallesRutina()));
+                  // Navegar a otra pantalla o mostrar un diálogo
+                },
+                child: Container(
+                  height: 55,
+                  color: Color.fromARGB(255, 255, 228, 130),
+                  child: Center(
+                    child: Text(
+                      "Rivals of aether",
+                      style: TextStyle(fontFamily: "Mario", fontSize: 20),
+                    ),
+                  ),
+                ),
               ),
-             Container(
-                height: 55,
-                color: Color.fromARGB(255, 255, 228, 130),
-                child: const Center(
-                  child: Text("Nombre de Juego 3",  style: TextStyle(fontFamily: "Mario", fontSize: 20)),
-              )), 
               Container(
                 
               ),
@@ -57,7 +102,7 @@ class listaJuegos extends StatelessWidget {
           ],
         ),
       ),
-       ),
+    ),
       
       persistentFooterAlignment: AlignmentDirectional.bottomCenter,
       persistentFooterButtons: <Widget>[
@@ -73,9 +118,6 @@ class listaJuegos extends StatelessWidget {
             },
             child: const Text("Juego 1")),
       ]
-
-      
-      
     );
   }
 }
