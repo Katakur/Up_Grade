@@ -9,8 +9,8 @@ class perfilJugador extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    String iconUser = "assets/user.svg";
-    String iconFavorite = "assets/favorite.svg";
+    String iconUser = "assets/icon/user.svg";
+    String iconFavorite = "assets/icon/favorite.svg";
 
     return Scaffold(
       appBar: AppBar(

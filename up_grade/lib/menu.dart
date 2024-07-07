@@ -15,13 +15,13 @@ class Menu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String iconUser = "assets/user.svg";
-    String iconController = "assets/controller.svg";
-    String iconDetails = "assets/details.svg";
+    String iconUser = "assets/icon/user.svg";
+    String iconController = "assets/icon/controller.svg";
+    String iconDetails = "assets/icon/details.svg";
     
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 134, 130, 255),
+        backgroundColor: Color.fromARGB(255, 207, 38, 63),
         title: Text("Nacho"),
       ),
 
@@ -32,7 +32,7 @@ class Menu extends StatelessWidget {
             //SvgPicture.asset(icon1),
             const DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.amber,
+                color: Color.fromARGB(255, 244, 211, 94),
               ),
               child: Text('Menu'),
             ),

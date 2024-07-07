@@ -9,12 +9,12 @@ class DetallesRutina extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     int iD_Juego_Seleccionado = 1;
-    String iconFavorite = "assets/favorite.svg";
+    String iconFavorite = "assets/icon/favorite.svg";
 
     return Scaffold(
       appBar: AppBar(
 
-        backgroundColor: Color.fromARGB(255, 234, 31, 89),
+        backgroundColor: Color.fromRGBO(235, 235, 211, 1),
 
         title: Text("Nombre del juego"),
       ),

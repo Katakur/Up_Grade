@@ -1,0 +1,157 @@
+[
+    {
+        "id": 1,
+        "nombre del juego": "Super Smash Bros Ultimate",
+        "name": "",
+        "dificultad": "Facil",
+        "descripcion": "Para expulsar más facil al enemigo hay que infligirle daño",
+        "objetivo": "Aprender a golpear",
+        "tareas": [
+            {
+                "nombre 1": "Golpe suave",
+                "tarea 1": "usa 'escudo' presionando ZL o ZR para mitigar 5 ataques",
+                "status": true
+            },
+            {
+                "nombre 2": "Golpe fuerte",
+                "tarea 2": "evita ataques 'esquivando', presiona ZL o ZR y direcciona para evitar 5 ataques",
+                "status": true
+            },
+            {
+                "nombre 3": "Golpe aéreo",
+                "tarea 3": "logra 'detener' presionando ZL o ZR y soltando el botón justo cuando vayas a recibir un golpe para detener 5 ataques",
+                "status": true
+            },
+            {
+                "nombre 3": "Ataque especial",
+                "tarea 3": "logra 'detener' presionando ZL o ZR y soltando el botón justo cuando vayas a recibir un golpe para detener 5 ataques",
+                "status": true
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "nombre del juego": "Super Smash Bros Ultimate",
+        "name": "",
+        "dificultad": "Medio",
+        "descripcion": "golpear al enemigo es importante, de la misma manera que esquivar",
+        "objetivo": "Aprender a esquivar",
+        "tareas": [
+            {
+                "nombre 1": "Bloquea",
+                "tarea 1": "usa 'escudo' presionando ZL o ZR para mitigar 5 ataques",
+                "status": true
+            },
+            {
+                "nombre 2": "Esquiva",
+                "tarea 2": "evita ataques 'esquivando', presiona ZL o ZR y direcciona para evitar 5 ataques",
+                "status": true
+            },
+            {
+                "nombre 3": "Detiene",
+                "tarea 3": "logra 'detener' presionando ZL o ZR y soltando el botón justo cuando vayas a recibir un golpe para detener 5 ataques",
+                "status": true
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "nombre del juego": "Super Smash Bros Ultimate",
+        "name": "",
+        "dificultad": "Dificil",
+        "descripcion": "golpear al enemigo es importante, de la misma manera que esquivar",
+        "objetivo": "Aprender a esquivar",
+        "tareas": [
+            {
+                "nombre 1": "Bloquea",
+                "tarea 1": "usa 'escudo' presionando ZL o ZR para mitigar 5 ataques",
+                "status": true
+            },
+            {
+                "nombre 2": "Esquiva",
+                "tarea 2": "evita ataques 'esquivando', presiona ZL o ZR y direcciona para evitar 5 ataques",
+                "status": true
+            },
+            {
+                "nombre 3": "Detiene",
+                "tarea 3": "logra 'detener' presionando ZL o ZR y soltando el botón justo cuando vayas a recibir un golpe para detener 5 ataques",
+                "status": true
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "nombre del juego": "Multiversus",
+        "name": "",
+        "dificultad": "Facil",
+        "descripcion": "golpear al enemigo es importante, de la misma manera que esquivar",
+        "objetivo": "Aprender a esquivar",
+        "tareas": [
+            {
+                "nombre 1": "Manten distancia",
+                "tarea 1": "usa 'esquivar' presionando ZL o ZR para alejarte del enemigo 10 veces",
+                "status": true
+            },
+            {
+                "nombre 2": "Esquiva",
+                "tarea 2": "evita ataques 'esquivando', presiona ZL o ZR y direcciona para evitar 5 ataques",
+                "status": true
+            },
+            {
+                "nombre 3": "Detiene",
+                "tarea 3": "logra 'detener', presiona ZL o ZR justo cuando vayas a recibir un golpe para detener 5 ataques",
+                "status": true
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "nombre del juego": "Nickelodeon All Star Brawl 2",
+        "name": "",
+        "dificultad": "Facil",
+        "descripcion": "golpear al enemigo es importante, de la misma manera que esquivar",
+        "objetivo": "Aprender a esquivar",
+        "tareas": [
+            {
+                "nombre 1": "Investigar de como funciona",
+                "tarea 1": " ",
+                "status": true
+            },
+            {
+                "nombre 2": "Investigar de como funciona",
+                "tarea 2": " ",
+                "status": true
+            },
+            {
+                "nombre 3": "Investigar de como funciona",
+                "tarea 3": " ",
+                "status": true
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "nombre del juego": "Rivals of aether",
+        "name": "",
+        "dificultad": "Facil",
+        "descripcion": "golpear al enemigo es importante, de la misma manera que esquivar",
+        "objetivo": "Aprender a esquivar",
+        "tareas": [
+            {
+                "nombre 1": "Manten distancia",
+                "tarea 1": "usa 'esquivar' presionando ZL o ZR para alejarte del enemigo 10 veces",
+                "status": true
+            },
+            {
+                "nombre 2": "Esquiva",
+                "tarea 2": "evita ataques 'esquivando', presiona ZL o ZR y direcciona para evitar 5 ataques",
+                "status": true
+            },
+            {
+                "nombre 3": "Detiene",
+                "tarea 3": "logra 'detener', presiona ZL o ZR justo cuando vayas a recibir un golpe para detener 5 ataques",
+                "status": true
+            }
+        ]
+    }
+]

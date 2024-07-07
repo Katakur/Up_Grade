@@ -1,123 +1,121 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_svg/flutter_svg.dart';
-
+import 'juego.dart'; // Importa la clase Juego
+import 'dart:convert' as convert;
 import 'detallesRutina.dart';
+
+Future<List<Juego>> loadGames() async {
+  String jsonString = await rootBundle.loadString('assets/json/glist.json');
+  List<dynamic> jsonData = convert.jsonDecode(jsonString);
+
+  List<Juego> juegos = jsonData.map((json) => Juego.fromJson(json)).toList();
+  return juegos;
+}
 
 class listaJuegos extends StatelessWidget {
   const listaJuegos({super.key});
 
   @override
   Widget build(BuildContext context) {
-    //String iconUser = "assets/user.svg";
-    int iD_Juego = 1; // ID del juego seleccionado
-    
-     return Scaffold(
+    return Scaffold(
       appBar: AppBar(
-
-        backgroundColor: Color.fromARGB(255, 134, 130, 255),
+        backgroundColor: Color.fromARGB(255, 207, 38, 63),
         title: Text("Juegos"),
       ),
+      body: Container(
+        color: Color.fromARGB(255, 44, 48, 46), 
+      child: FutureBuilder<List<Juego>>(
+        future: loadGames(),
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return Center(child: CircularProgressIndicator());
+          } else if (snapshot.hasError) {
+            return Center(child: Text('Error: ${snapshot.error}'));
+          } else if (snapshot.hasData) {
+            List<Juego> juegos = snapshot.data!;
+            return ListView.builder(
+              itemCount: juegos.length,
+              itemBuilder: (context, index) {
+                Juego juego = juegos[index];
+                return Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 5.0),
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => DetallesRutina(juego: juego),
+                        ),
+                      );
+                    },
+                    child: Container(
+                      height: 125,
+                      color: Color.fromRGBO(235, 235, 211, 1),
+                     child: Center(
+                      //SvgPicture.asset(iconController, width: 45, height: 45)
+                        child: SvgPicture.asset(
+                          juego.icon,
+                          width: 175,
+                          //width: 75,
+                          //height: 75,
+                        ),
+                      ),
+                    ),
+                  ),
+                );
+              },
+            );
+          } else {
+            return Center(child: Text('No data found'));
+          }
+        },
+      ),
+      ),
+      persistentFooterAlignment: AlignmentDirectional.bottomCenter,
+      persistentFooterButtons: <Widget>[
+        ElevatedButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: const Text("Regresar"),
+        ),
+      ],
+    );
+  }
+}
 
-       body: Center(
-        //Lista
-        child: Card(
-          color: Color.fromARGB(255, 219, 216, 254),
-          child: ListView(
-            children: <Widget>[
-            //Los elementos de la lista se guardan en conteiner
-             InkWell(
-                onTap: () {
-                  // Acción al tocar "Nombre de Juego 1"
-                  iD_Juego = 1;
-                  Navigator.push(
-                context,
-                MaterialPageRoute(                 
-                builder: (context) => const DetallesRutina()));
-                  // Navegar a otra pantalla o mostrar un diálogo
-                },
-                child: Container(
-                  height: 55,
-                  color: Color.fromARGB(255, 255, 228, 130),
-                  child: Center(
-                    child: Text(
-                      "super Smash Bros Melee",
-                      style: TextStyle(fontFamily: "Mario", fontSize: 20),
-                    ),
-                  ),
-                ),
-              ),
-              Container(
-                height: 5,
-                                  
-              ),
-             InkWell(
-                onTap: () {
-                  // Acción al tocar "Nombre de Juego 2"
-                  iD_Juego = 2;
-                  Navigator.push(
-                context,
-                MaterialPageRoute(                 
-                builder: (context) => const DetallesRutina()));
-                  // Navegar a otra pantalla o mostrar un diálogo
-                },
-                child: Container(
-                  height: 55,
-                  color: Color.fromARGB(255, 255, 228, 130),
-                  child: Center(
-                    child: Text(
-                      "Multiversus",
-                      style: TextStyle(fontFamily: "Mario", fontSize: 20),
-                    ),
-                  ),
-                ),
-              ),
-              Container(
-                height: 5,
-              ),
-             InkWell(
-                onTap: () {
-                  // Acción al tocar "Nombre de Juego 3"
-                  iD_Juego = 3;
-                  Navigator.push(
-                context,
-                MaterialPageRoute(                 
-                builder: (context) => const DetallesRutina()));
-                  // Navegar a otra pantalla o mostrar un diálogo
-                },
-                child: Container(
-                  height: 55,
-                  color: Color.fromARGB(255, 255, 228, 130),
-                  child: Center(
-                    child: Text(
-                      "Rivals of aether",
-                      style: TextStyle(fontFamily: "Mario", fontSize: 20),
-                    ),
-                  ),
-                ),
-              ),
-              Container(
-                
-              ),
-              //////////////////////////////// AGREGAR LINK PARA DETALLES DE RUTINA CON EL TIPO DE JUEGO SELECCIONADO ///////////////////
+class DetallesRutina extends StatelessWidget {
+  final Juego juego;
+
+  const DetallesRutina({Key? key, required this.juego}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(juego.nombre),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text('Name: ${juego.nombre}'),
+            Text('Genre: ${juego.genero}'),
+            Text('Platforms: ${juego.plataformas.join(", ")}'),
+            Text('Description: ${juego.descripcion}'),
+            Text('Webpage: ${juego.webpage}'),
+            Text('Popularity: ${juego.popularidad}'),
+            // You can add more details as needed
           ],
         ),
       ),
-    ),
-      
-      persistentFooterAlignment: AlignmentDirectional.bottomCenter,
-      persistentFooterButtons: <Widget>[
-      ElevatedButton(onPressed: () {
-            Navigator.pop(context);
-      },
-            child: const Text("Regresar")),
-            ElevatedButton(onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(                 
-                builder: (context) => const DetallesRutina())); //ir a lista de juegos
-            },
-            child: const Text("Juego 1")),
-      ]
     );
   }
+}
+
+void main() {
+  runApp(MaterialApp(
+    home: listaJuegos(),
+  ));
 }

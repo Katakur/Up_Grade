@@ -5,19 +5,29 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import 'detallesRutina.dart';
 
-class juegos {
+class Juego {
   int ID;
-  String imagen;
   String nombre;
-  int anno;
   String genero;
+  List<String> plataformas;
   String descripcion;
-  String link;
-  Float puntuacion;
-  int dannoTotal;
-  int tiempoPartida;
+  String webpage;
+  double popularidad;
+  String icon;
 
-  juegos(this.ID, this.imagen, this.nombre, this.anno, this.genero, this.descripcion, this.link, this.puntuacion, this.dannoTotal, 
-  this.tiempoPartida);
+  Juego(this.ID, this.nombre, this.genero, this.plataformas, this.descripcion, this.webpage, this.popularidad, this.icon);
+
+   factory Juego.fromJson(Map<String, dynamic> json) {
+    return Juego(
+      json['id'],
+      json['nombre'],
+      json['genero'],
+      List<String>.from(json['plataformas']),
+      json['descripcion'],
+      json['webpage'],
+      double.parse(json['popularidad'].toString()),
+      json['icon'],
+    );
+  }
 
 }

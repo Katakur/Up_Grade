@@ -10,7 +10,7 @@ class DetallesApp extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
 
-        backgroundColor: Color.fromARGB(255, 219, 216, 254),
+        backgroundColor: Color.fromRGBO(235, 235, 211, 1),
 
         title: Text("Detalles de la app"),
       ),

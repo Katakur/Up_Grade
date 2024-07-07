@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "nombre": "Super Smash Bros Ultimate",
+        "genero": "Pelea con plataformas",
+        "plataformas": ["Nintendo Switch"],
+        "descripcion": "descripcion del juego xD",
+        "webpage": "https://www.smashbros.com/es_ES/",
+        "popularidad": "9.4",
+        "icon": "assets/icon/Logo_SSBU.svg"
+    },
+    {
+        "id": 2,
+        "nombre": "Multiversus",
+        "genero": "Pelea con plataformas",
+        "plataformas": ["Steam"],
+        "descripcion": "descripcion del juego xD",
+        "webpage": "https://multiversus.com/es-es",
+        "popularidad": "8",
+        "icon": "assets/icon/Logo_MV.svg"
+    },
+    {
+        "id": 3,
+        "nombre": "Nickelodeon All Star Brawl 2",
+        "genero": "Pelea con plataformas",
+        "plataformas": ["Steam", "Playstation 5", "Plastation 4", "Xbox one, Xbox Series X|S", "Nintendo Switch"],
+        "descripcion": "descripcion del juego xD",
+        "webpage": "https://nickelodeonallstarbrawl.com/",
+        "popularidad": "7",
+        "icon": "assets/icon/Logo_NASB2.svg"
+    },
+    {
+        "id": 4,
+        "nombre": "Rivals of aether",
+        "genero": "Pelea con plataformas",
+        "plataformas": ["Steam", "Nintendo", "Switch"],
+        "descripcion": "descripcion del juego xD",
+        "webpage": "https://rivalsofaether.com/",
+        "popularidad": "8.2",
+        "icon": "assets/icon/Logo_RoA.svg"
+    }
+]
