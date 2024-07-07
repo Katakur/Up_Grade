@@ -2,29 +2,29 @@
     {
         "id": 1,
         "nombre del juego": "Super Smash Bros Ultimate",
-        "name": "",
+        "nombre de rutina": "Golpear",
         "dificultad": "Facil",
         "descripcion": "Para expulsar más facil al enemigo hay que infligirle daño",
         "objetivo": "Aprender a golpear",
         "tareas": [
             {
                 "nombre 1": "Golpe suave",
-                "tarea 1": "usa 'escudo' presionando ZL o ZR para mitigar 5 ataques",
+                "tarea 1": "usa un 'golpe suave' presionando A y una dirección para infligir daño 5 veces",
                 "status": true
             },
             {
                 "nombre 2": "Golpe fuerte",
-                "tarea 2": "evita ataques 'esquivando', presiona ZL o ZR y direcciona para evitar 5 ataques",
+                "tarea 2": "usa un 'golpe fuerte' dejando presionado A y una dirección para infligir daño 5 veces",
                 "status": true
             },
             {
                 "nombre 3": "Golpe aéreo",
-                "tarea 3": "logra 'detener' presionando ZL o ZR y soltando el botón justo cuando vayas a recibir un golpe para detener 5 ataques",
+                "tarea 3": "salta para usar un 'golpe aéreo' presionado A y una dirección en el aire e infligir daño 5 veces",
                 "status": true
             },
             {
-                "nombre 3": "Ataque especial",
-                "tarea 3": "logra 'detener' presionando ZL o ZR y soltando el botón justo cuando vayas a recibir un golpe para detener 5 ataques",
+                "nombre 4": "Ataque especial",
+                "tarea 4": "usa un 'ataque especial' presionando B y una dirección para infligir daño 5 veces",
                 "status": true
             }
         ]
@@ -32,24 +32,19 @@
     {
         "id": 2,
         "nombre del juego": "Super Smash Bros Ultimate",
-        "name": "",
+        "nombre de rutina": "Agarrar",
         "dificultad": "Medio",
-        "descripcion": "golpear al enemigo es importante, de la misma manera que esquivar",
-        "objetivo": "Aprender a esquivar",
+        "descripcion": "Aprovecha la corta distancia sujetando al enemigo",
+        "objetivo": "Aprender a agarrar",
         "tareas": [
             {
-                "nombre 1": "Bloquea",
-                "tarea 1": "usa 'escudo' presionando ZL o ZR para mitigar 5 ataques",
+                "nombre 1": "Agarra y golpea",
+                "tarea 1": "usa 'agarre' presionando Z o R para agarrar al enemigo y golpealo presionando A 5 veces",
                 "status": true
             },
             {
-                "nombre 2": "Esquiva",
-                "tarea 2": "evita ataques 'esquivando', presiona ZL o ZR y direcciona para evitar 5 ataques",
-                "status": true
-            },
-            {
-                "nombre 3": "Detiene",
-                "tarea 3": "logra 'detener' presionando ZL o ZR y soltando el botón justo cuando vayas a recibir un golpe para detener 5 ataques",
+                "nombre 2": "Agarra y lanza",
+                "tarea 2": "usa 'agarre' presionando Z o R para agarrar al enemigo y presiona una direccional para lanzarlo 5 veces",
                 "status": true
             }
         ]
@@ -57,7 +52,7 @@
     {
         "id": 3,
         "nombre del juego": "Super Smash Bros Ultimate",
-        "name": "",
+        "nombre de rutina": "Esquivar",
         "dificultad": "Dificil",
         "descripcion": "golpear al enemigo es importante, de la misma manera que esquivar",
         "objetivo": "Aprender a esquivar",
@@ -80,10 +75,55 @@
         ]
     },
     {
-        "id": 2,
+        "id": 4,
         "nombre del juego": "Multiversus",
-        "name": "",
+        "nombre de rutina": "Golpear",
         "dificultad": "Facil",
+        "descripcion": "Para expulsar más facil al enemigo hay que infligirle daño",
+        "objetivo": "Aprender a golpear",
+        "tareas": [
+            {
+                "nombre 1": "Golpe",
+                "tarea 1": "usa un 'golpe' presionando A y una dirección para infligir daño 5 veces",
+                "status": true
+            },
+            {
+                "nombre 2": "Golpe aéreo",
+                "tarea 2": "salta para usar un 'golpe aéreo' presionado A y una dirección en el aire e infligir daño 5 veces",
+                "status": true
+            },
+            {
+                "nombre 3": "Ataque especial",
+                "tarea 3": "usa un 'ataque especial' presionando B y una dirección para infligir daño 5 veces",
+                "status": true
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "nombre del juego": "Multiversus",
+        "nombre de rutina": "Tipos de ataque",
+        "dificultad": "Medio",
+        "descripcion": "Para asegurar un ataque o contrarrestar uno, hay que tomar atención a los ataques",
+        "objetivo": "Aprende los tipos de ataque",
+        "tareas": [
+            {
+                "nombre 1": "Golpe con super armadura",
+                "tarea 1": "usa un 'golpe' con efecto amarillo para tener super armadura 5 veces",
+                "status": true
+            },
+            {
+                "nombre 2": "Golpe rompe super armadura",
+                "tarea 2": "usa un 'golpe' con efecto morado para golpear alguien con super armadura 5 veces",
+                "status": true
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "nombre del juego": "Multiversus",
+        "nombre de rutina": "",
+        "dificultad": "Dificil",
         "descripcion": "golpear al enemigo es importante, de la misma manera que esquivar",
         "objetivo": "Aprender a esquivar",
         "tareas": [
@@ -105,35 +145,135 @@
         ]
     },
     {
-        "id": 3,
+        "id": 7,
         "nombre del juego": "Nickelodeon All Star Brawl 2",
-        "name": "",
+        "nombre de rutina": "",
         "dificultad": "Facil",
         "descripcion": "golpear al enemigo es importante, de la misma manera que esquivar",
         "objetivo": "Aprender a esquivar",
         "tareas": [
             {
-                "nombre 1": "Investigar de como funciona",
-                "tarea 1": " ",
+                "nombre 1": "Golpe suave",
+                "tarea 1": "usa un 'golpe suave' presionando A y una dirección para infligir daño 5 veces",
                 "status": true
             },
             {
-                "nombre 2": "Investigar de como funciona",
-                "tarea 2": " ",
+                "nombre 2": "Golpe fuerte",
+                "tarea 2": "usa un 'golpe fuerte' presionado B y una dirección para infligir daño 5 veces",
                 "status": true
             },
             {
-                "nombre 3": "Investigar de como funciona",
-                "tarea 3": " ",
+                "nombre 3": "Golpe aéreo",
+                "tarea 3": "salta para usar un 'golpe aéreo' presionado A y una dirección en el aire e infligir daño 5 veces",
+                "status": true
+            },
+            {
+                "nombre 4": "Golpe aéreo fuerte",
+                "tarea 4": "salta para usar un 'golpe aéreo' presionado B y una dirección en el aire e infligir daño 5 veces",
+                "status": true
+            },
+            {
+                "nombre 5": "Ataque especial",
+                "tarea 5": "usa un 'ataque especial' presionando X y una dirección para infligir daño 5 veces",
                 "status": true
             }
         ]
     },
     {
-        "id": 4,
+        "id": 8,
+        "nombre del juego": "Nickelodeon All Star Brawl 2",
+        "nombre de rutina": "Agarrar",
+        "dificultad": "Medio",
+        "descripcion": "Aprovecha la corta distancia sujetando al enemigo",
+        "objetivo": "Aprender a agarrar",
+        "tareas": [
+            {
+                "nombre 1": "Agarra",
+                "tarea 1": "usa 'agarre' presionando Z o R para agarrar al enemigo 5 veces",
+                "status": true
+            },
+            {
+                "nombre 2": "Lanzar",
+                "tarea 2": "usa 'agarre' presionando Z o R para agarrar al enemigo y presiona una direccional para lanzarlo 5 veces",
+                "status": true
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "nombre del juego": "Nickelodeon All Star Brawl 2",
+        "nombre de rutina": "Medidor de slime",
+        "dificultad": "Dificil",
+        "descripcion": "Carga la barra de slime y mejora una de tus técnicas",
+        "objetivo": "Aprender a usar el medidor de slime",
+        "tareas": [
+            {
+                "nombre 1": "Mejora movimiento especial",
+                "tarea 1": "Usa un nivel de medidor para mejorar un ataque especial 5 veces",
+                "status": true
+            },
+            {
+                "nombre 2": "Ráfaga babosa",
+                "tarea 2": "Usa dos niveles de medidor cuando te lancen un ataque para cancelar el impulso 5 veces",
+                "status": true
+            },
+            {
+                "nombre 3": "Guiones rápidos",
+                "tarea 3": "Utiliza un nivel de medidor para hacer una carrera aérea y moverte rápido en el aire 5 veces",
+                "status": true
+            }
+        ]
+    },
+    {
+        "id": 10,
         "nombre del juego": "Rivals of aether",
-        "name": "",
+        "nombre de rutina": "Golpear",
         "dificultad": "Facil",
+        "descripcion": "Para expulsar más facil al enemigo hay que infligirle daño",
+        "objetivo": "Aprender a golpear",
+        "tareas": [
+            {
+                "nombre 1": "Golpe suave",
+                "tarea 1": "usa un 'golpe suave' presionando A y una dirección para infligir daño 5 veces",
+                "status": true
+            },
+            {
+                "nombre 2": "Golpe fuerte",
+                "tarea 2": "usa un 'golpe fuerte' dejando presionado A y una dirección para infligir daño 5 veces",
+                "status": true
+            },
+            {
+                "nombre 3": "Golpe aéreo",
+                "tarea 3": "salta para usar un 'golpe aéreo' presionado A y una dirección en el aire e infligir daño 5 veces",
+                "status": true
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "nombre del juego": "Rivals of aether",
+        "nombre de rutina": "Ataques especiales",
+        "dificultad": "Medio",
+        "descripcion": "Cada personaje tiene su propia especialidad",
+        "objetivo": "Aprender a usar tu personaje",
+        "tareas": [
+            {
+                "nombre 1": "Especial",
+                "tarea 1": "Lanza un 'ataque especial' presionando B y una dirección 5 veces",
+                "status": true
+            },
+            {
+                "nombre 2": "Aprovecha la oportunidad",
+                "tarea 2": "logra aprovechar el efecto de tu ataque especial 5 veces",
+                "status": true
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "nombre del juego": "Rivals of aether",
+        "nombre de rutina": "Escudar",
+        "dificultad": "Dificil",
         "descripcion": "golpear al enemigo es importante, de la misma manera que esquivar",
         "objetivo": "Aprender a esquivar",
         "tareas": [
