@@ -22,7 +22,7 @@ class DetallesApp extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Text("Esta aplicación fue realizada cómo parte de un proyecto universitario. Busca ayudar a los jugadores de videojuegos mejorar su rendimiento", 
-            style: TextStyle(fontFamily: "Mario", fontSize: 15, letterSpacing: BorderSide.strokeAlignOutside)),
+            style: TextStyle(fontFamily: "Tahoma", fontSize: 15, letterSpacing: BorderSide.strokeAlignOutside)),
             ],  
           )
         ),

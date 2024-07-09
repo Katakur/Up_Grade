@@ -32,17 +32,6 @@ class perfilJugador extends StatelessWidget {
             Text(' Soy jugador nuevo y busco mejorar en juegos de pelea tipo smash para salirme de la U ',  style: TextStyle(fontFamily: 'Mario', fontSize: 20)),
 
             Text(' \n \n \n \n'),// Salto de espacio
-
-            Text(' Juego favorito ',  style: TextStyle(fontFamily: 'Mario', fontSize: 20)),
-            ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(                 
-                builder: (context) => const DetallesRutina())); //ir a lista de juegos
-            },
-            child: SvgPicture.asset(iconFavorite, height: 35, width: 35,)),
-
           ]
         )
       ),

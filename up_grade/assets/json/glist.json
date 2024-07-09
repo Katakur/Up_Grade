@@ -4,7 +4,7 @@
         "nombre": "Super Smash Bros Ultimate",
         "genero": "Pelea con plataformas",
         "plataformas": ["Nintendo Switch"],
-        "descripcion": "descripcion del juego xD",
+        "descripcion": "Videojuego que busca reunir a las mejores caras de Nintendo, en un juego hasta 8 peleadores simultaneos buscarán salir victoriosos",
         "webpage": "https://www.smashbros.com/es_ES/",
         "popularidad": "9.4",
         "icon": "assets/icon/Logo_SSBU.svg"
@@ -13,8 +13,8 @@
         "id": 2,
         "nombre": "Multiversus",
         "genero": "Pelea con plataformas",
-        "plataformas": ["Steam"],
-        "descripcion": "descripcion del juego xD",
+        "plataformas": ["Steam", "Playstation 5", "Plastation 4", "Xbox one, Xbox Series X|S", "Nintendo Switch"],
+        "descripcion": "Videojuego que busca reunir a las mejores caras de Warner, en un juego 2v2 donde formar equipo es fundamental",
         "webpage": "https://multiversus.com/es-es",
         "popularidad": "8",
         "icon": "assets/icon/Logo_MV.svg"
@@ -24,7 +24,7 @@
         "nombre": "Nickelodeon All Star Brawl 2",
         "genero": "Pelea con plataformas",
         "plataformas": ["Steam", "Playstation 5", "Plastation 4", "Xbox one, Xbox Series X|S", "Nintendo Switch"],
-        "descripcion": "descripcion del juego xD",
+        "descripcion": "Videojuego que busca reunir a las mejores caras de Nickelodeon, en un juego centrado en el sistema de combos y romper las pausas entre movimientos",
         "webpage": "https://nickelodeonallstarbrawl.com/",
         "popularidad": "7",
         "icon": "assets/icon/Logo_NASB2.svg"
@@ -34,7 +34,7 @@
         "nombre": "Rivals of aether",
         "genero": "Pelea con plataformas",
         "plataformas": ["Steam", "Nintendo", "Switch"],
-        "descripcion": "descripcion del juego xD",
+        "descripcion": "Videojuego que se centra en un mundo separado por los cuatro elementos, en un juego competitivo al clásico modo de Super Smash Bros Melee donde los combos y control de escenarios es importante",
         "webpage": "https://rivalsofaether.com/",
         "popularidad": "8.2",
         "icon": "assets/icon/Logo_RoA.svg"

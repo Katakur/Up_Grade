@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Color.fromARGB(255, 44, 48, 46), 
         colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 244, 211, 94)),
          textTheme: const TextTheme(
+          ///////////// CAMBIAR COLOR FUENTE DE LETRA DESPUÉS //////////////////////
     bodyText1: TextStyle(color: Colors.white), // Usar bodyText en lugar de bodyText2
     headline1: TextStyle(color: Colors.blue), // Ejemplo de color azul para headline1
     // Añade más estilos de texto según sea necesario

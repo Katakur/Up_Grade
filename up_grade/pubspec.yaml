@@ -89,6 +89,9 @@ flutter:
     - family: Mario
       fonts:
       - asset: fonts/SuperMario256.ttf
+    - family: Tahoma
+      fonts:
+      - asset: fonts/tahoma.ttf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
