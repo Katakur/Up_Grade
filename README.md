@@ -2,7 +2,7 @@
  Proyecto de Dispositivos moviles
 
 Link GitHub: https://github.com/Katakur/Up_Grade.git
-Link YT: https://youtu.be/PZ122Pl7ZU4
+Link YT: https://youtu.be/i3arY_X4I9w
 
 Requerimientos funcionales:
 - Ingresa la selección de actividad
