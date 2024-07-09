@@ -9,6 +9,7 @@ import 'detallesRutina.dart';
 Future<List<Juego>> loadGames() async {
   String jsonString = await rootBundle.loadString('assets/json/glist.json');
   List<dynamic> jsonData = convert.jsonDecode(jsonString);
+  List<dynamic>? _jsonList;
 
   List<Juego> juegos = jsonData.map((json) => Juego.fromJson(json)).toList();
   return juegos;

@@ -1,9 +1,4 @@
-import 'dart:ffi';
-
-import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-
-import 'detallesRutina.dart';
+import 'dart:convert';
 
 class Tarea {
   String nombre;
@@ -20,8 +15,16 @@ class Tarea {
     );
   }
 
+  Map<String, dynamic> toJson() {
+    return {
+      'nombre': nombre,
+      'tarea': tarea,
+      'status': status,
+    };
+  }
+  
   void toggleStatus() {
-    status = !status; // Cambia el estado de la tarea
+    status = !status;
   }
 }
 
@@ -35,13 +38,20 @@ class Rutina {
   List<Tarea> tareas;
   bool completado;
 
-  Rutina(this.id, this.nombreJuego, this.nombreRutina, this.dificultad, this.descripcion, this.objetivo, this.tareas, this.completado);
+  Rutina(
+    this.id,
+    this.nombreJuego,
+    this.nombreRutina,
+    this.dificultad,
+    this.descripcion,
+    this.objetivo,
+    this.tareas,
+    this.completado,
+  );
 
   factory Rutina.fromJson(Map<String, dynamic> json) {
     var list = json['tareas'] as List;
     List<Tarea> tareaList = list.map((e) => Tarea.fromJson(e)).toList();
-    
-    bool allCompleted = tareaList.every((tarea) => tarea.status);
 
     return Rutina(
       json['id'],
@@ -51,12 +61,25 @@ class Rutina {
       json['descripcion'],
       json['objetivo'],
       tareaList,
-      allCompleted,
+      json['completado'],
     );
   }
 
-  void toggleStatus() {
-    completado = !completado; // Cambia el estado de la tarea
+  bool todasTareasCompletas() {
+    print("Todo listo");
+    return tareas.every((tarea) => tarea.status);
+  }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'nombreJuego': nombreJuego,
+      'nombreRutina': nombreRutina,
+      'dificultad': dificultad,
+      'descripcion': descripcion,
+      'objetivo': objetivo,
+      'tareas': tareas.map((tarea) => tarea.toJson()).toList(),
+      'completado': todasTareasCompletas(),
+    };
   }
 }
-

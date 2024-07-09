@@ -27,8 +27,39 @@ Future<List<Rutina>> loadRoutines() async {
   return rutinas;
 }
 
-class Menu extends StatelessWidget {
+class Menu extends StatefulWidget {
   const Menu({super.key});
+
+  @override
+  _MenuState createState() => _MenuState();
+}
+
+class _MenuState extends State<Menu> {
+  List<Rutina> rutinas = []; // Lista para almacenar las rutinas
+
+  @override
+  void initState() {
+    super.initState();
+    // Cargar las rutinas al inicio
+    loadRoutines().then((loadedRutinas) {
+      setState(() {
+        rutinas = loadedRutinas;
+      });
+    });
+  }
+
+  void updateRutinaCompletionStatus(bool allCompleted) {
+    setState(() {
+      // Actualizar el estado de completado de la rutina en Menu
+      for (var rutina in rutinas) {
+        if (rutina.tareas.every((tarea) => tarea.status)) {
+          rutina.completado = true;
+        } else {
+          rutina.completado = false;
+        }
+      }
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -94,53 +125,36 @@ class Menu extends StatelessWidget {
 
       body: Container(
         padding: EdgeInsets.all(16.0),
-        child: FutureBuilder<List<Rutina>>(
-          future: loadRoutines(),
-          builder: (context, snapshot) {
-            if (snapshot.connectionState == ConnectionState.waiting) {
-              return Center(child: CircularProgressIndicator());
-            } else if (snapshot.hasError) {
-              return Center(child: Text('Error: ${snapshot.error}'));
-            } else if (snapshot.hasData) {
-              List<Rutina> rutinas = snapshot.data!;
-              return ListView.builder(
-                itemCount: rutinas.length,
-                itemBuilder: (context, index) {
-                  Rutina rutina = rutinas[index];
-                  return Card(
-                    elevation: 3,
-                    margin: EdgeInsets.symmetric(vertical: 8.0),
-                    child: ListTile(
-                      title: Text(rutina.nombreRutina),
-                        subtitle: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text("Juego: ${rutina.nombreJuego}"),
-                            SizedBox(height: 4), // Espacio entre líneas
-                            Text("Dificultad: ${rutina.dificultad}"),
-                             SizedBox(height: 4),
-                            //Text("Estado: ${rutina.status}"), // Mostrar el estado aquí
-                            // Puedes agregar más información según los campos de tu clase Rutina
-                            ],
-                      ),
-                      trailing: rutina.completado
-                          ? Icon(Icons.check_circle, color: Colors.green)
-                          : Icon(Icons.cancel, color: Colors.red),
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => DetallesRutinaEspecifica(rutina: rutina),
-                          ),
-                        );
-                      },
+        child: ListView.builder(
+          itemCount: rutinas.length,
+          itemBuilder: (context, index) {
+            Rutina rutina = rutinas[index];
+            return Card(
+              elevation: 3,
+              margin: EdgeInsets.symmetric(vertical: 8.0),
+              child: ListTile(
+                title: Text(rutina.nombreRutina),
+                subtitle: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("Juego: ${rutina.nombreJuego}"),
+                    SizedBox(height: 4), // Espacio entre líneas
+                    Text("Dificultad: ${rutina.dificultad}"),
+                  ],
+                ),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => DetallesRutinaEspecifica(rutina: rutina, callback: updateRutinaCompletionStatus),
                     ),
                   );
                 },
-              );
-            } else {
-              return Center(child: Text('No se encontraron datos'));
-            }
+                trailing: rutina.completado
+                    ? Icon(Icons.check_circle, color: Colors.green)
+                    : Icon(Icons.cancel, color: Colors.red),
+              ),
+            );
           },
         ),
       ),

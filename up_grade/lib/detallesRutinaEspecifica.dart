@@ -3,19 +3,32 @@ import 'Rutina.dart'; // Asegúrate de importar la clase Rutina
 
 class DetallesRutinaEspecifica extends StatefulWidget {
   final Rutina rutina;
+  final Function(bool) callback; // Función de callback para actualizar _allTareasCompleted en Menu
 
-  DetallesRutinaEspecifica({required this.rutina});
+  DetallesRutinaEspecifica({required this.rutina, required this.callback});
 
   @override
   _DetallesRutinaEspecificaState createState() => _DetallesRutinaEspecificaState();
 }
 
 class _DetallesRutinaEspecificaState extends State<DetallesRutinaEspecifica> {
-  
   void _toggleTareaStatus(int index) {
     setState(() {
-      widget.rutina.tareas[index].toggleStatus(); // Método para cambiar el estado de la tarea
+      widget.rutina.tareas[index].toggleStatus(); // Cambia el estado de la tarea
+      _completeTareasStatus(); // Verifica si todas las tareas están completadas
     });
+  }
+
+  void _completeTareasStatus() {
+    bool allCompleted = widget.rutina.tareas.every((tarea) => tarea.status);
+    if (allCompleted) {
+      // Llama al callback para indicar que todas las tareas están completadas
+      widget.callback(true);
+      print("Todas las tareas están completadas!");
+    } else {
+      widget.callback(false);
+      print("Aún hay tareas pendientes.");
+    }
   }
 
   @override
@@ -37,7 +50,7 @@ class _DetallesRutinaEspecificaState extends State<DetallesRutinaEspecifica> {
               SizedBox(height: 12),
               Text('Dificultad: ${widget.rutina.dificultad}', style: TextStyle(color: Colors.white)), 
               SizedBox(height: 12),
-              Text('Descripcion: ${widget.rutina.descripcion}', style: TextStyle(color: Colors.white)), 
+              Text('Descripción: ${widget.rutina.descripcion}', style: TextStyle(color: Colors.white)), 
               SizedBox(height: 12),
               Text('Objetivo: ${widget.rutina.objetivo}', style: TextStyle(color: Colors.white)), 
               SizedBox(height: 12),
@@ -64,7 +77,7 @@ class _DetallesRutinaEspecificaState extends State<DetallesRutinaEspecifica> {
                         child: Icon(
                           tarea.status ? Icons.check : Icons.cancel,
                           //color: Colors.white,
-                        ),
+                        ), 
                       ),
                     ),
                   );
