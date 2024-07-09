@@ -71,6 +71,7 @@ flutter:
     - assets/icon/Logo_NASB2.svg
     - assets/icon/Logo_RoA.svg
     - assets/icon/Logo_SSBU.svg
+    - assets/icon/upGrade.svg
 
     - assets/json/glist.json
     - assets/json/rlist.json

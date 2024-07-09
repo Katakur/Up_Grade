@@ -95,7 +95,7 @@ class _MenuState extends State<Menu> {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const perfilJugador()),
+                  MaterialPageRoute(builder: (context) => const PerfilJugador()),
                 );
               },
             ),
