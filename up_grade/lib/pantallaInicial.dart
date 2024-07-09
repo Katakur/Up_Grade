@@ -24,7 +24,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             //SvgPicture.asset('assets/icon/details', width: 45, height: 45),
-            Text("Bienvenido", style: TextStyle(fontFamily: "Mario", fontSize: 20)),
+            Text("Bienvenido", style: TextStyle(fontFamily: "Mario", fontSize: 20, color: Color.fromRGBO(235, 235, 211, 1))),
           ],  
         )
       ),
