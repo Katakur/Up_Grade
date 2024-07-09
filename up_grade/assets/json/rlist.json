@@ -12,24 +12,25 @@
                     {
                         "nombre": "Golpe suave",
                         "tarea": "usa un 'golpe suave' presionando A y una dirección para infligir daño 5 veces",
-                        "status": true
+                        "status": false
                     },
                     {
                         "nombre": "Golpe fuerte",
                         "tarea": "usa un 'golpe fuerte' dejando presionado A y una dirección para infligir daño 5 veces",
-                        "status": true
+                        "status": false
                     },
                     {
                         "nombre": "Golpe aéreo",
                         "tarea": "salta para usar un 'golpe aéreo' presionado A y una dirección en el aire e infligir daño 5 veces",
-                        "status": true
+                        "status": false
                     },
                     {
                         "nombre": "Ataque especial",
                         "tarea": "usa un 'ataque especial' presionando B y una dirección para infligir daño 5 veces",
-                        "status": true
+                        "status": false
                     }
-                ]
+                ],
+                "completado": false
             }
         ]
     },
@@ -46,14 +47,15 @@
                     {
                         "nombre": "Agarra y golpea",
                         "tarea": "usa 'agarre' presionando Z o R para agarrar al enemigo y golpealo presionando A 5 veces",
-                        "status": true
+                        "status": false
                     },
                     {
                         "nombre": "Agarra y lanza",
                         "tarea": "usa 'agarre' presionando Z o R para agarrar al enemigo y presiona una direccional para lanzarlo 5 veces",
-                        "status": true
+                        "status": false
                     }
-                ]
+                ],
+                "completado": false
             }
         ]
     },
@@ -70,19 +72,20 @@
                     {
                         "nombre": "Bloquea",
                         "tarea": "usa 'escudo' presionando ZL o ZR para mitigar 5 ataques",
-                        "status": true
+                        "status": false
                     },
                     {
                         "nombre": "Esquiva",
                         "tarea": "evita ataques 'esquivando', presiona ZL o ZR y direcciona para evitar 5 ataques",
-                        "status": true
+                        "status": false
                     },
                     {
                         "nombre": "Detiene",
                         "tarea": "logra 'detener' presionando ZL o ZR y soltando el botón justo cuando vayas a recibir un golpe para detener 5 ataques",
-                        "status": true
+                        "status": false
                     }
-                ]
+                ],
+                "completado": false
             }
         ]
     },
@@ -99,19 +102,20 @@
                     {
                         "nombre": "Golpe",
                         "tarea": "usa un 'golpe' presionando A y una dirección para infligir daño 5 veces",
-                        "status": true
+                        "status": false
                     },
                     {
                         "nombre": "Golpe aéreo",
                         "tarea": "salta para usar un 'golpe aéreo' presionado A y una dirección en el aire e infligir daño 5 veces",
-                        "status": true
+                        "status": false
                     },
                     {
                         "nombre": "Ataque especial",
                         "tarea": "usa un 'ataque especial' presionando B y una dirección para infligir daño 5 veces",
-                        "status": true
+                        "status": false
                     }
-                ]
+                ],
+                "completado": false
             }
         ]
     },
@@ -128,14 +132,15 @@
                     {
                         "nombre": "Golpe con super armadura",
                         "tarea": "usa un 'golpe' con efecto amarillo para tener super armadura 5 veces",
-                        "status": true
+                        "status": false
                     },
                     {
                         "nombre": "Golpe rompe super armadura",
                         "tarea": "usa un 'golpe' con efecto morado para golpear alguien con super armadura 5 veces",
-                        "status": true
+                        "status": false
                     }
-                ]
+                ],
+                "completado": false
             }
         ]
     },
@@ -152,19 +157,20 @@
                     {
                         "nombre": "Manten distancia",
                         "tarea": "usa 'esquivar' presionando ZL o ZR para alejarte del enemigo 10 veces",
-                        "status": true
+                        "status": false
                     },
                     {
                         "nombre": "Esquiva",
                         "tarea": "evita ataques 'esquivando', presiona ZL o ZR y direcciona para evitar 5 ataques",
-                        "status": true
+                        "status": false
                     },
                     {
                         "nombre": "Detiene",
                         "tarea": "logra 'detener', presiona ZL o ZR justo cuando vayas a recibir un golpe para detener 5 ataques",
-                        "status": true
+                        "status": false
                     }
-                ]
+                ],
+                "completado": false
             }
         ]
     },
@@ -181,29 +187,30 @@
                     {
                         "nombre": "Golpe suave",
                         "tarea": "usa un 'golpe suave' presionando A y una dirección para infligir daño 5 veces",
-                        "status": true
+                        "status": false
                     },
                     {
                         "nombre": "Golpe fuerte",
                         "tarea": "usa un 'golpe fuerte' presionado B y una dirección para infligir daño 5 veces",
-                        "status": true
+                        "status": false
                     },
                     {
                         "nombre": "Golpe aéreo",
                         "tarea": "salta para usar un 'golpe aéreo' presionado A y una dirección en el aire e infligir daño 5 veces",
-                        "status": true
+                        "status": false
                     },
                     {
                         "nombre": "Golpe aéreo fuerte",
                         "tarea": "salta para usar un 'golpe aéreo' presionado B y una dirección en el aire e infligir daño 5 veces",
-                        "status": true
+                        "status": false
                     },
                     {
                         "nombre": "Ataque especial",
                         "tarea": "usa un 'ataque especial' presionando X y una dirección para infligir daño 5 veces",
-                        "status": true
+                        "status": false
                     }
-                ]
+                ],
+                "completado": false
             }
         ]
     },
@@ -220,14 +227,15 @@
                     {
                         "nombre": "Agarra",
                         "tarea": "usa 'agarre' presionando Z o R para agarrar al enemigo 5 veces",
-                        "status": true
+                        "status": false
                     },
                     {
                         "nombre": "Lanzar",
                         "tarea": "usa 'agarre' presionando Z o R para agarrar al enemigo y presiona una direccional para lanzarlo 5 veces",
-                        "status": true
+                        "status": false
                     }
-                ]
+                ],
+                "completado": false
             }
         ]
     },
@@ -244,19 +252,20 @@
                     {
                         "nombre": "Mejora movimiento especial",
                         "tarea": "Usa un nivel de medidor para mejorar un ataque especial 5 veces",
-                        "status": true
+                        "status": false
                     },
                     {
                         "nombre": "Ráfaga babosa",
                         "tarea": "Usa dos niveles de medidor cuando te lancen un ataque para cancelar el impulso 5 veces",
-                        "status": true
+                        "status": false
                     },
                     {
                         "nombre": "Guiones rápidos",
                         "tarea": "Utiliza un nivel de medidor para hacer una carrera aérea y moverte rápido en el aire 5 veces",
-                        "status": true
+                        "status": false
                     }
-                ]
+                ],
+                "completado": false
             }
         ]
     },
@@ -273,19 +282,20 @@
                     {
                         "nombre": "Golpe suave",
                         "tarea": "usa un 'golpe suave' presionando A y una dirección para infligir daño 5 veces",
-                        "status": true
+                        "status": false
                     },
                     {
                         "nombre": "Golpe fuerte",
                         "tarea": "usa un 'golpe fuerte' dejando presionado A y una dirección para infligir daño 5 veces",
-                        "status": true
+                        "status": false
                     },
                     {
                         "nombre": "Golpe aéreo",
                         "tarea": "salta para usar un 'golpe aéreo' presionado A y una dirección en el aire e infligir daño 5 veces",
-                        "status": true
+                        "status": false
                     }
-                ]
+                ],
+                "completado": false
             }
         ]
     },
@@ -302,14 +312,15 @@
                     {
                         "nombre": "Especial",
                         "tarea": "Lanza un 'ataque especial' presionando B y una dirección 5 veces",
-                        "status": true
+                        "status": false
                     },
                     {
                         "nombre": "Aprovecha la oportunidad",
                         "tarea": "logra aprovechar el efecto de tu ataque especial 5 veces",
-                        "status": true
+                        "status": false
                     }
-                ]
+                ],
+                "completado": false
             }
         ]
     },
@@ -326,19 +337,20 @@
                     {
                         "nombre": "Manten distancia",
                         "tarea": "usa 'esquivar' presionando ZL o ZR para alejarte del enemigo 10 veces",
-                        "status": true
+                        "status": false
                     },
                     {
                         "nombre": "Esquiva",
                         "tarea": "evita ataques 'esquivando', presiona ZL o ZR y direcciona para evitar 5 ataques",
-                        "status": true
+                        "status": false
                     },
                     {
                         "nombre": "Detiene",
                         "tarea": "logra 'detener', presiona ZL o ZR justo cuando vayas a recibir un golpe para detener 5 ataques",
-                        "status": true
+                        "status": false
                     }
-                ]
+                ],
+                "completado": false
             }
         ]
     }

@@ -19,6 +19,10 @@ class Tarea {
       json['status'],
     );
   }
+
+  void toggleStatus() {
+    status = !status; // Cambia el estado de la tarea
+  }
 }
 
 class Rutina {
@@ -29,12 +33,15 @@ class Rutina {
   String descripcion;
   String objetivo;
   List<Tarea> tareas;
+  bool completado;
 
-  Rutina(this.id, this.nombreJuego, this.nombreRutina, this.dificultad, this.descripcion, this.objetivo, this.tareas);
+  Rutina(this.id, this.nombreJuego, this.nombreRutina, this.dificultad, this.descripcion, this.objetivo, this.tareas, this.completado);
 
   factory Rutina.fromJson(Map<String, dynamic> json) {
     var list = json['tareas'] as List;
     List<Tarea> tareaList = list.map((e) => Tarea.fromJson(e)).toList();
+    
+    bool allCompleted = tareaList.every((tarea) => tarea.status);
 
     return Rutina(
       json['id'],
@@ -44,7 +51,12 @@ class Rutina {
       json['descripcion'],
       json['objetivo'],
       tareaList,
+      allCompleted,
     );
+  }
+
+  void toggleStatus() {
+    completado = !completado; // Cambia el estado de la tarea
   }
 }
 

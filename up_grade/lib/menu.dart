@@ -118,10 +118,14 @@ class Menu extends StatelessWidget {
                             Text("Juego: ${rutina.nombreJuego}"),
                             SizedBox(height: 4), // Espacio entre líneas
                             Text("Dificultad: ${rutina.dificultad}"),
-                            //Text("Duración estimada: ${rutina.objetivo} minutos"),
+                             SizedBox(height: 4),
+                            //Text("Estado: ${rutina.status}"), // Mostrar el estado aquí
                             // Puedes agregar más información según los campos de tu clase Rutina
                             ],
                       ),
+                      trailing: rutina.completado
+                          ? Icon(Icons.check_circle, color: Colors.green)
+                          : Icon(Icons.cancel, color: Colors.red),
                       onTap: () {
                         Navigator.push(
                           context,
